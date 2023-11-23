@@ -1,9 +1,12 @@
 # Git Repository: https://github.com/TheDevFruit/AICourse
 
-arr = [0, 1]
-n = int(input("Введите N-Число: "))
-for i in arr:
-    arr.append(arr[len(arr)-1] + arr[len(arr)-2])
-    if len(arr)-1 == n:
-        print(arr[len(arr)-1])
-        break
+a = 1
+def func():
+    b = 2
+    def summa(c):
+        d = 4
+        print(a + b + c + d)
+    summa(3)
+
+
+func()
