@@ -1,12 +1,9 @@
 # Git Repository: https://github.com/TheDevFruit/AICourse
 
-a = 1
-def func():
-    b = 2
-    def summa(c):
-        d = 4
-        print(a + b + c + d)
-    summa(3)
-
-
-func()
+text = str(input("Введите Текст: "))
+count = 0
+for i in range(len(text)):
+    if text[i].lower() == "к" and i < len(text)-2:
+         if text[i] + text[i+1] + text[i+2] in ["Кот", "КОТ", "кот"]:
+             count += 1
+print(count)
