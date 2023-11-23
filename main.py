@@ -1,9 +1,12 @@
 # Git Repository: https://github.com/TheDevFruit/AICourse
+# У меня старая версия пайтона - 3.9 (match не работает)
+def func(text):
+    match text:
+        case "save":
+            print("сохранить")
+        case "load":
+            print("сохранить")
+        case _:
+            print("неизвестная операция")
 
-arr = ['Иван', 'Алиса', 'Петр', 'Ольга', 'Евгения', 'Дмитрий', 'Ли']
-
-for_first = lambda x: x[0]
-arr.sort(key=for_first)
-
-for i in range(len(arr)):
-    print(f"{i} {arr[i]}")
+func(input("Введите Текст: "))
